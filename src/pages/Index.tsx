@@ -420,27 +420,11 @@ function HomeView({ setView }: { setView: (v: View) => void }) {
         </div>
       </section>
 
-      <section className="bg-foreground noise-bg border-t border-white/5">
-        <div className="max-w-5xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <div className="font-serif text-xl text-white mb-1">Safety is built in, not bolted on.</div>
-            <div className="text-white/50 text-sm">Every post is reviewed. Every reply goes through anonymous relay. Report anything suspicious in one tap.</div>
-          </div>
-          <button className="bg-amber-500 hover:bg-amber-400 text-foreground font-semibold px-5 py-2.5 rounded-xl text-sm transition-all flex-shrink-0">
-            Safety center →
-          </button>
-        </div>
-      </section>
-
       <footer className="border-t border-border bg-background">
         <div className="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="font-serif text-lg text-foreground">connect<span className="text-amber-500">.</span></span>
           <div className="flex gap-5 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">About</a>
-            <a href="#" className="hover:text-foreground transition-colors">Safety</a>
-            <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-            <a href="#" className="hover:text-foreground transition-colors">Report</a>
           </div>
           <span className="text-xs text-muted-foreground">© 2026 connect. 18+ only.</span>
         </div>
@@ -568,10 +552,6 @@ function PostDetailView({ setView }: { setView: (v: View) => void }) {
         <div className="flex items-center gap-5 mt-6 pt-5 border-t border-border text-xs text-muted-foreground">
           <span className="flex items-center gap-1.5"><Icon name="Eye" size={12} />{post.views} views</span>
           <span className="flex items-center gap-1.5"><Icon name="MessageSquare" size={12} />{post.replies} replies</span>
-          <button className="ml-auto flex items-center gap-1.5 hover:text-foreground transition-colors">
-            <Icon name="Flag" size={12} />
-            Report
-          </button>
         </div>
       </article>
 
