@@ -355,9 +355,7 @@ function HomeView({ setView }: { setView: (v: View) => void }) {
         <div className="max-w-5xl mx-auto px-4 py-4 flex gap-8 overflow-x-auto">
           {[
             { v: "13,400", l: "active posts today" },
-            { v: "98%", l: "spam-free rate" },
             { v: "8,200+", l: "verified users" },
-            { v: "4 cities", l: "added this week" },
           ].map(s => (
             <div key={s.l} className="flex-shrink-0">
               <span className="font-serif text-xl text-foreground">{s.v}</span>
