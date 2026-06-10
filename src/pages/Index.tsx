@@ -10,7 +10,6 @@ const CATEGORIES = [
   { icon: "Users", label: "Women seeking Women", slug: "w4w", count: 921 },
   { icon: "Heart", label: "Casual encounters", slug: "casual", count: 4102 },
   { icon: "Coffee", label: "Friendship & activity", slug: "friends", count: 742 },
-  { icon: "Star", label: "Missed connections", slug: "missed", count: 389 },
   { icon: "Globe", label: "Strictly platonic", slug: "platonic", count: 618 },
 ];
 
@@ -28,19 +27,7 @@ const POSTS = [
     replies: 4,
     views: 89,
   },
-  {
-    id: 2,
-    title: "Saw you at the farmers market — red jacket",
-    category: "Missed connections",
-    slug: "missed",
-    body: "You were buying flowers near the east entrance. We made eye contact twice. You smiled. I didn't say anything because I froze. Big regret. If this is you, please reach out.",
-    age: "34",
-    location: "Portland, OR",
-    posted: "1h ago",
-    verified: true,
-    replies: 2,
-    views: 214,
-  },
+
   {
     id: 3,
     title: "Genuine connection, not just a swipe",
@@ -106,19 +93,7 @@ const POSTS = [
     replies: 5,
     views: 88,
   },
-  {
-    id: 8,
-    title: "She had a tattoo of a map and ordered black coffee",
-    category: "Missed connections",
-    slug: "missed",
-    body: "Third Street Café, Tuesday around noon. You were reading something and I was pretending to work. I should have said hi. Here's hoping.",
-    age: "36",
-    location: "Nashville, TN",
-    posted: "8h ago",
-    verified: true,
-    replies: 1,
-    views: 302,
-  },
+
 ];
 
 const MESSAGES_DATA = [
@@ -177,7 +152,6 @@ function VerifiedBadge({ small = false }: { small?: boolean }) {
 
 function CategoryBadge({ label }: { label: string }) {
   const colors: Record<string, string> = {
-    "Missed connections": "bg-rose-50 text-rose-700 border-rose-200",
     "Friendship & activity": "bg-sky-50 text-sky-700 border-sky-200",
     "Strictly platonic": "bg-violet-50 text-violet-700 border-violet-200",
     "Casual encounters": "bg-orange-50 text-orange-700 border-orange-200",
